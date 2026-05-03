@@ -22,4 +22,8 @@ export default defineConfig([
     files: ['src/context/**/*.{js,jsx}'],
     rules: { 'react-refresh/only-export-components': 'off' },
   },
+  {
+    files: ['vite.config.js', 'eslint.config.js'],
+    languageOptions: { globals: globals.node },
+  },
 ])
